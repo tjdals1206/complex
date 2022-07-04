@@ -1,5 +1,5 @@
 """
-문성민: maintainer
+문성민:maintainer
 김동한:addition,subtraction
 조민식:multiplication
 """
