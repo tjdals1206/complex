@@ -1,33 +1,23 @@
 """
-
-문성민 : maintainer
-김동한 : addition,subtraction
-조민식 : multiplication
-
-
+name1: 문성민
+name2:addition,subtraction
+name3:multiplication
 """
-
 class Complex:
-    def __init__(self, re=0, im=0):
+    def __init__(self, re, im):
         self.re = re
         self.im = im
     
-    
     def __str__(self):
-        return str(self.re)+"+"+str(self.im)+"i"
+        return str(self.re) + "+" + str(self.im) + "i"
         
-class Subtraction:
-    def __init__(self, re=0, im=0):
-        self.re = re
-        self.im = im
-    
-    
-    def __str__(self):
-        return str(self.re-self.im)
-           
-                
         
-c1 = Complex(1, 2)
-c2 = Subtraction(1, 2)
+    def subtract(self, c1):
+        c = Complex()
+        c.re = self.re - c1.re
+        c.im = self.im - c1.im
+        
+c1 = Complex(1,2)
 print(c1)
-print(c2)
+c2 = Complex(2, 3)
+print(c2.subtract(c2))
