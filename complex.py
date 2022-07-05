@@ -4,7 +4,7 @@
 조민식: multiplication
 """
 class Complex:
-    def __init__(self, re, im):
+    def __init__(self, re=0, im=0):
         self.re = re
         self.im = im
     
@@ -16,6 +16,7 @@ class Complex:
         c = Complex()
         c.re = self.re - c1.re
         c.im = self.im - c1.im
+        return c
         
 c1 = Complex(1,2)
 print(c1)
