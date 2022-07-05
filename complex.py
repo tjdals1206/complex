@@ -37,6 +37,6 @@ print(c1)
 
 c2 = Complex(2, 3)
 print(c1.add(c2))
-print(c1.subtract(c2))
+print(c2.subtract(c1))
 print(c1.multiply(c2))
 
