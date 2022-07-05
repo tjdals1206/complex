@@ -26,6 +26,7 @@ class Complex:
         return c
  
     def add(self, c1):
+        c = Complex()
         c.re = self.re + c1.re
         c.im = self.im + c1.im
         return c
